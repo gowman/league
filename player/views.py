@@ -2,5 +2,8 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
+from django.http import HttpResponse, JsonResponse
 
-# Create your views here.
+def player_list(arg):
+    print arg
+    return JsonResponse({'resp': 'arg'})
